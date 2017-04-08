@@ -15,7 +15,8 @@ Start the Monitor by either:
   or,
   sudo python AmpApp.py [address of your reciever]
  
- ## AmpApp Usage
+## AmpApp Usage
+```
 usage: AmpApp.py [-h] [-r RETRY] [-i RETRYINTERVAL] [-p PORT] host
 
 positional arguments:
@@ -27,5 +28,6 @@ optional arguments:
   -i RETRYINTERVAL, --retryInterval RETRYINTERVAL
                             length, in seconds, to wait before retrying
   -p PORT, --port PORT      reciever port to connect to
+```
 
 Note that you need to run the python using sudo, as this is required to allow the Pi to access the GPIO.
