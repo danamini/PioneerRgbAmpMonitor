@@ -10,17 +10,17 @@ You'll need to make sure your Pioneer reciever is connected to your local networ
 ## Hardware
 You'll need a Raspberry Pi (2 or 3), an Adafruit RGB matrix, a 64x32 RGB LED display, and a network connected Pioneer VSX Receiver. 
 
-These links will help: 
+These links will help you understand what you need. If you're doing this from scratch you'll need to do a bit of soldering (not too difficult for a novice): 
 * https://www.adafruit.com/product/2276
 * https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi/driving-matrices
 
 ## Getting Started
-1. Clone the git repo to your Raspberry Pi (it's been tested on a Pi 2 and Pi 3).
+1. Clone the git repo to your Raspberry Pi.
 2. Execute the command: `chmod +x ./run.sh`
 3. Get the IP Address of you Pioneer Receiver and modify the `./run.sh` file.
 4. Start the Monitor by either `./run.sh` or `sudo python AmpApp.py [address of your reciever]`
 
-You'll need to get this github project https://github.com/adafruit/rpi-rgb-led-matrix. It contains `rgbmatrix.so` which is you'll need to copy to the directory you've download this Pioneer python code to. 
+You'll need to get this github project https://github.com/adafruit/rpi-rgb-led-matrix. It contains `rgbmatrix.so` which you'll need to copy to the directory you've download this Pioneer python code to. 
 
 The LED-matrix library is (c) Henner Zeller h.zeller@acm.org with GNU General Public License Version 2.0 http://www.gnu.org/licenses/gpl-2.0.txt
  
@@ -39,7 +39,7 @@ optional arguments:
   -p PORT, --port PORT      reciever port to connect to
 ```
 Notes:
-* You'll need to run the python using sudo, as this is required to allow the Pi to access the GPIO.
+* You'll need to run python using sudo, as this is required to allow the Pi to access the GPIO.
 * The default port to connect to the reciever is 8102, this is different on some other models. 
 
 ## Pioneer Connectivity
