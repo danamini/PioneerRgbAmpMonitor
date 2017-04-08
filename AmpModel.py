@@ -72,7 +72,7 @@ class AmpModel(object):
         """ Force an snapshot of the current state from the reciever."""
         self.amp_request(AmpConstants.VOLUME_REQUEST)
         self.amp_request(AmpConstants.FRONT_LINE_REQUEST)
-        self.amp_request(AmpConstants.F_REQUEST)
+        self.amp_request(AmpConstants.INPUT_SOURCE_REQUEST)
         self.amp_request(AmpConstants.VIDEO_INFO_REQUEST)
         self.amp_request(AmpConstants.AUDIO_INFO_REQUEST)
         self.event_callback()
