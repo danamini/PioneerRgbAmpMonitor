@@ -1,10 +1,11 @@
  # Pioneer RGB Amp Monitor
-A visual monitor using a Adafruit RGB display on a Raspberry Pi. The simple python code allows you to replicate your Pioneer AV Receivers display on a AdaFruit RGB Display.
-The project uses your Pioneer receivers telnet port to integrate and read the current status of your device.
+This project allows you to display key information, in realtime, from your Pioneer AV Receiver on a RGB LED display. Using an Adafruit RGB display and Raspberry Pi this python code allows you to connect your Pioneer receiver and integrate and read the status of your device.
 
-The code has been tested using a Pioneer VSX-925. It is likely to work on other 900/1000 range models. 
+Information such as the current volume, input source, front line display, video and audio settings are displayed on the RGB display. The RGB display is updated as you use your reciever, for example changing the input source as you select different devices on you reciever. 
 
-More information, images, parts list and unit tests to be added shortly.
+The code has been tested using a Raspberry Pi 2 and 3 and Pioneer VSX-925. It is likely that it will work on other 900/1000 range models, although see the notes below. 
+
+You'll need to make sure you Pioneer reciever is connected to your local network and the Pi can see it.   
 
 ## Hardware
 You'll need a Raspberry Pi (2 or 3), an Adafruit RGB matrix, a 64x32 RGB LED display, and a network connected Pioneer VSX Receiver. 
