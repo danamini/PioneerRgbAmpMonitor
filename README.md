@@ -7,13 +7,10 @@ The code has been tested using a Pioneer VSX-925. It is likely to work on other 
 More information, images, parts list and unit tests to be added shortly.
 
 ## Getting Started
-Clone the git repo to your Raspberry Pi (it's been tested on a Pi 2 and Pi 3).
-Execute the command: chmod +x ./run.sh
-Get the IP Address of you Pioneer Receiver, and modify the ./run.sh file.
-Start the Monitor by either: 
-  ./run.sh 
-  or,
-  sudo python AmpApp.py [address of your reciever]
+1. Clone the git repo to your Raspberry Pi (it's been tested on a Pi 2 and Pi 3).
+2. Execute the command: `chmod +x ./run.sh`
+3. Get the IP Address of you Pioneer Receiver and modify the `./run.sh` file.
+4. Start the Monitor by either `./run.sh` or `sudo python AmpApp.py [address of your reciever]`
  
 ## AmpApp Usage
 ```
