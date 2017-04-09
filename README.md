@@ -73,7 +73,7 @@ This is a work in progress. Next steps are:
 * Add Unit Tests
 * Move font and panel values to AmpConstants
 * Add multiple callbacks in to the AmpView to remove dependency on AmpModel
-* Replace ImageText usage with new custom TextRegion class to allow decoupling of text from the display and to support animations (code will be added to github in due course, it a work in progress)
+* Replace ImageText usage with new custom TextRegion class to allow decoupling of text from the display and to support animations (code will be added to github in due course, work in progress)
 * Provide a RESTful interface based on Flask to allow remote starting/stopping over HTTP
 * Add a port scanner to locate a reciever on your local network, would mean you don't need to provide the hostname/ip 
 * Add a Command interface, to allow the reciever to be controlled via the same AmpModel
