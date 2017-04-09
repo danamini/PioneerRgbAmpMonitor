@@ -1,7 +1,7 @@
 # Pioneer RGB Amp Monitor
 This project allows you to display key information, in realtime, from your Pioneer AV Receiver on a RGB LED display. Using an Adafruit RGB display and Raspberry Pi this python code allows you to connect your Pioneer receiver and integrate and read the status of your device.
 
-Information such as the current volume, input source, front line display, video and audio settings are displayed on the RGB display. The RGB display is updated as you use your reciever, for example changing the input source as you select different devices on your reciever. 
+makeInformation such as the current volume, input source, front line display, video and audio settings are displayed on the RGB display. The RGB display is updated as you use your reciever, for example changing the input source as you select different devices on your reciever. 
 
 The code has been tested using a Raspberry Pi 2 and 3 and Pioneer VSX-925. It is likely that it will work on other 900/1000 range models, although see the notes below. 
 
@@ -11,7 +11,7 @@ The display will look like this:
 
 ![alt-text](https://github.com/danamini/PioneerRgbAmpMonitor/blob/master/images/RGB%20Display.JPG)
 
-## Hardware
+ ## Hardware
 You'll need a Raspberry Pi (2 or 3), an Adafruit RGB matrix, a 64x32 RGB LED display, and a network connected Pioneer VSX Receiver. 
 
 These links will help you understand what you need. If you're doing this from scratch you'll need to do a bit of soldering (not too difficult for a novice): 
@@ -21,7 +21,7 @@ These links will help you understand what you need. If you're doing this from sc
 ## Getting Started
 
 ### Dependencies
-You'll need to get this github project https://github.com/adafruit/rpi-rgb-led-matrix. It contains `rgbmatrix.so` which you'll need to copy to the directory you've download this Pioneer python code to. The LED-matrix library is (c) Henner Zeller h.zeller@acm.org with GNU General Public License Version 2.0 http://www.gnu.org/licenses/gpl-2.0.txt
+,You'll need to get this github project https://github.com/adafruit/rpi-rgb-led-matrix. It contains `rgbmatrix.so` which you'll need to copy to the directory you've download this Pioneer python code to. The LED-matrix library is (c) Henner Zeller h.zeller@acm.org with GNU General Public License Version 2.0 http://www.gnu.org/licenses/gpl-2.0.txt
 
 The monitor is also dependent on the Python Image Library (PIL). 
 
@@ -73,8 +73,8 @@ This is a work in progress. Next steps are:
 * Add Unit Tests
 * Move font and panel values to AmpConstants
 * Add multiple callbacks in to the AmpView to remove dependency on AmpModel
-* Replace ImageText usage with new custom TextRegion class to allow decoupling of text from the display and to support animations (code will be added to github in due course, work in progress)
-* Provide a RESTful interface based on Flask to allow remote starting/stopping over HTTP
+* Replace ImageText usage with new custom TextRegion class to allow decoupling of text from the display and to support animations (_work started_)
+* _IoT_ the project by providing a RESTful interface to allow remote starting/stopping over HTTP (_work started_)
 * Add a port scanner to locate a reciever on your local network, would mean you don't need to provide the hostname/ip 
-* Add a Command interface, to allow the reciever to be controlled via the same AmpModel
-* Add other Views, maybe for Philips Hue
+* Add a command interface, to allow the reciever to be controlled via the same AmpModel
+* Add other Views for Philips Hue (_work started_)
