@@ -19,14 +19,19 @@ These links will help you understand what you need. If you're doing this from sc
 * https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi/driving-matrices
 
 ## Getting Started
+
+### Dependencies
+You'll need to get this github project https://github.com/adafruit/rpi-rgb-led-matrix. It contains `rgbmatrix.so` which you'll need to copy to the directory you've download this Pioneer python code to. The LED-matrix library is (c) Henner Zeller h.zeller@acm.org with GNU General Public License Version 2.0 http://www.gnu.org/licenses/gpl-2.0.txt
+
+The monitor is also dependent on the Python Image Library (PIL). 
+
+_todo: add pip insttructions and font details_
+
+### Clone and run the Monitor
 1. Clone the git repo to your Raspberry Pi.
 2. Execute the command: `chmod +x ./run.sh`
 3. Get the IP Address of you Pioneer Receiver and modify the `./run.sh` file.
 4. Start the Monitor by either `./run.sh` or `sudo python AmpApp.py [address of your reciever]`
-
-You'll need to get this github project https://github.com/adafruit/rpi-rgb-led-matrix. It contains `rgbmatrix.so` which you'll need to copy to the directory you've download this Pioneer python code to. 
-
-The LED-matrix library is (c) Henner Zeller h.zeller@acm.org with GNU General Public License Version 2.0 http://www.gnu.org/licenses/gpl-2.0.txt
  
 ## AmpApp Usage
 ```
@@ -63,6 +68,9 @@ The code has been written for a 32x64 pixel display. If you want to use a differ
 
 ## Next Steps
 This is a work in progress. Next steps are:
-* Provide a RESTful interface based on Flask to allow remote control
 * Add Unit Tests
+* Move font and panel values to AmpConstants
+* Add multiple callbacks in to the AmpView to remove dependency on AmpModel
+* Replace ImageText usage with new custom TextRegion class to allow decoupling of text from the display and to support animations (code will be added to github in due course)
+* Provide a RESTful interface based on Flask to allow remote control
 * Add other Views, maybe for Philips Hue
