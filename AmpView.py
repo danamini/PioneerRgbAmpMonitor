@@ -61,7 +61,7 @@ class AmpView(object):
         self.timer = Timer(5, self.__dim)
         self.timer.start()
 
-    def __clear(self):
+    def clear(self):
         """ Clear the matrix display and reset the timer """
         self.logger.debug('Clear called')
         self.matrix.Clear()

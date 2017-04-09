@@ -29,8 +29,9 @@ class AmpController(object):
         # If retryconnect is set to true then keep retrying
         if self.retryconnect:
             while self.model.connect() is False:
-                time.sleep = self.retryinterval
-                print "Receiver not found. Sleeping for " + str(self.retryinterval) + " second(s)"
+                self.logger.info('Receiver not found. Sleeping for %s second(s)',
+                                 self.retryinterval)
+                time.sleep(self.retryinterval)
         else:
             # Tell the model to connect to the amp
             if self.model.connect() is False:
