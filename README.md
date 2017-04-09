@@ -8,7 +8,7 @@ The code has been tested using a Raspberry Pi 2 and 3 and Pioneer VSX-925. It is
 You'll need to make sure your Pioneer reciever is connected to your local network and the Pi can see it.   
 
 The display will look like this:![alt-text](https://github.com/danamini/PioneerRgbAmpMonitor/blob/master/images/RGB%20Display.JPG)
-
+r
  ## Hardware
 You'll need a Raspberry Pi (2 or 3), an Adafruit RGB matrix, a 64x32 RGB LED display, and a network connected Pioneer VSX Receiver. 
 
@@ -29,7 +29,7 @@ The monitor is also dependent on the Python Image Library (PIL).
 ### Clone and run the Monitor
 1. Clone the git repo to your Raspberry Pi.
 2. Execute the command: `chmod +x ./run.sh`
-3. Get the IP Address of you Pioneer Receiver and modify the `./run.sh` file.
+3. Get the IP Address of your Pioneer Receiver and modify the `./run.sh` file.
 4. Start the Monitor by either `./run.sh` or `sudo python AmpApp.py [address of your reciever]`
  
 ## AmpApp Usage
