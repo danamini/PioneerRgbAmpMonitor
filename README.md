@@ -8,7 +8,6 @@ The code has been tested using a Raspberry Pi 2 and 3 and Pioneer VSX-925. It is
 You'll need to make sure your Pioneer reciever is connected to your local network and the Pi can see it.   
 
 The display will look like this:
-
 ![alt-text](https://github.com/danamini/PioneerRgbAmpMonitor/blob/master/images/RGB%20Display.JPG)
 
  ## Hardware
@@ -19,7 +18,7 @@ These links will help you understand what you need. If you're doing this from sc
 * https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi/driving-matrices
 
 ## Getting Started
-
+/
 ### Dependencies
 ,You'll need to get this github project https://github.com/adafruit/rpi-rgb-led-matrix. It contains `rgbmatrix.so` which you'll need to copy to the directory you've download this Pioneer python code to. The LED-matrix library is (c) Henner Zeller h.zeller@acm.org with GNU General Public License Version 2.0 http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -67,6 +66,10 @@ The code has been written for a 32x64 pixel display. If you want to use a differ
     PANEL_WIDTH = 64
 ```
 The default configuration assumes you've `git clone`'d `rpi-rgb-led-matrix` to `/home/pi`. 
+
+## Known Bugs/Issues
+* Retry interval not yet coded
+* The reciever needs around 0.1 seconds between sending requested, need a better way to sync data
 
 ## Next Steps
 This is a work in progress. Next steps are:
