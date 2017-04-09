@@ -8,7 +8,7 @@ The code has been tested using a Raspberry Pi 2 and 3 and Pioneer VSX-925. It is
 You'll need to make sure your Pioneer reciever is connected to your local network and the Pi can see it.   
 
 The display will look like this:![alt-text](https://github.com/danamini/PioneerRgbAmpMonitor/blob/master/images/RGB%20Display.JPG)
-r
+
  ## Hardware
 You'll need a Raspberry Pi (2 or 3), an Adafruit RGB matrix, a 64x32 RGB LED display, and a network connected Pioneer VSX Receiver. 
 
