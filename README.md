@@ -69,7 +69,6 @@ The code has been written for a 32x64 pixel display. If you want to use a differ
 The default configuration assumes you've `git clone`'d `rpi-rgb-led-matrix` to `/home/pi`. 
 
 ## Known Bugs/Issues
-* Retry interval not yet coded
 * The reciever needs around 0.1 seconds between sending requested, need a better way to sync data
 
 ## Next Steps
