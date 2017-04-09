@@ -3,6 +3,8 @@ This project allows you to display key information, in realtime, from your Pione
 
 Information such as the current volume, input source, front line display, video and audio settings are displayed on the RGB display. The RGB display is updated as you use your reciever, for example changing the input source as you select different devices on your reciever. 
 
+![alt-text](https://github.com/danamini/PioneerRgbAmpMonitor/blob/master/images/Slide1.JPG)
+
 The code has been tested using a Raspberry Pi 2 and 3 and Pioneer VSX-925. It is likely that it will work on other 900/1000 range models, although see the notes below. 
 
 You'll need to make sure your Pioneer reciever is connected to your local network and the Pi can see it.   
