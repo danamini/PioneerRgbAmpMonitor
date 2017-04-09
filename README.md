@@ -25,7 +25,8 @@ You'll need to get this github project https://github.com/adafruit/rpi-rgb-led-m
 
 The monitor is also dependent on the Python Image Library (PIL). 
 
-_todo: add pip insttructions and font details_
+1. If you don't have PIP then run `sudo apt-get install python-pip`
+2. run `sudo apt-get install python-imaging`
 
 ### Clone and run the Monitor
 1. Clone the git repo to your Raspberry Pi.
@@ -52,7 +53,7 @@ Notes:
 * The default port to connect to the reciever is 8102, this is different on some other models. 
 
 ## Pioneer Connectivity
-See https://www.pioneerelectronics.com/StaticFiles/PUSA/Files/Home%20Custom%20Install/SC-37-RS232.pdf for more details of the telnet (originally RS-232) based protocol that is used by the monitor to communicate with the reciever. 
+See https://www.pioneerelectronics.com/StaticFiles/PUSA/Files/Home%20Custom%20Install/SC-37-RS232.pdf for more details of the telnet (originally RS-232) based protocol that is used by the monitor to communicate with the reciever. If you look at that file you'll notice it is for a different model, however it looks like most Pioneer recievers use the same basic protocol. 
 
 ## Limitations
 The code has been written for a 32x64 pixel display. If you want to use a different size display and fonts then you'll need to change the constants in the `AmpView.py` file:
@@ -65,6 +66,7 @@ The code has been written for a 32x64 pixel display. If you want to use a differ
     PANELS = 2
     PANEL_WIDTH = 64
 ```
+The default configuration assumes you've `git clone`'d `rpi-rgb-led-matrix` to `/home/pi`. 
 
 ## Next Steps
 This is a work in progress. Next steps are:
@@ -73,5 +75,6 @@ This is a work in progress. Next steps are:
 * Add multiple callbacks in to the AmpView to remove dependency on AmpModel
 * Replace ImageText usage with new custom TextRegion class to allow decoupling of text from the display and to support animations (code will be added to github in due course, it a work in progress)
 * Provide a RESTful interface based on Flask to allow remote starting/stopping over HTTP
+* Add a port scanner to locate a reciever on your local network, would mean you don't need to provide the hostname/ip 
 * Add a Command interface, to allow the reciever to be controlled via the same AmpModel
 * Add other Views, maybe for Philips Hue
